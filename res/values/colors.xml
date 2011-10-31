@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="DemoKitTextWhite">#FFF</color>
+	<color name="DemoKitLabelGray">#666</color>
+	<color name="light_white">#99FFFFFF</color>
+	<color name="lightgrey">#cc222222</color>
+		<color name="lightblack">#cc000000</color>
+				<color name="lightred">#77ff0000</color>
+								<color name="overred">#44ff0000</color>
+				
+								<color name="lightyellow">#99fafad2</color>
+				
+				
+	
+</resources>

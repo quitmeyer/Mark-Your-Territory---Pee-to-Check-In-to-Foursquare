@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/dirt2blurtarget"
+	android:gravity="center_horizontal" android:layout_width="match_parent">
+
+	<LinearLayout android:layout_height="fill_parent"
+		android:id="@+id/noDevice" android:visibility="gone"
+		android:layout_width="match_parent" android:layout_weight="0"
+		android:orientation="vertical">
+		<TextView android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:id="@+id/textView1"
+			android:layout_weight="0" android:text="Please Connect an ADK Compatible Board"
+			style="@style/DemoKitNoDevice" android:gravity="center"
+			android:background="@color/lightgrey"></TextView>
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="match_parent" android:layout_weight="1"
+			android:src="@drawable/nodevicesplash2" android:layout_height="wrap_content"></ImageView>
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_weight="1" android:textStyle="bold" android:text="//MARK YOUR TERRITORY//"
+			android:id="@+id/titleText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@color/lightred"
+			android:layout_gravity="center" android:gravity="center"></TextView>
+	</LinearLayout>
+
+
+
+	<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="bold" android:text="//MARK YOUR TERRITORY//"
+		android:id="@+id/titleText" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/lightred"
+		android:layout_gravity="center" android:gravity="center"></TextView>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="0" android:id="@+id/preparedcontainer">
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/statusContainer" android:layout_weight="1" android:background="@color/lightgrey">
+				<TextView android:layout_width="wrap_content" android:text="STATUS:" android:textColor="@color/DemoKitTextWhite" android:gravity="left|center_vertical|bottom" android:layout_height="wrap_content" style="@style/DemoKitControlLabel" android:layout_gravity="bottom|left" android:id="@+id/TextView01"></TextView>
+				<TextView android:layout_width="wrap_content" android:text="READY TO MARK" android:textColor="@color/DemoKitTextWhite" android:gravity="left|center_vertical|bottom" style="@style/DemoKitControlLabel" android:layout_gravity="bottom|left" android:textStyle="bold" android:textSize="20dp" android:id="@+id/tvStatus"></TextView>
+			</LinearLayout>
+		<Button android:layout_width="wrap_content" android:text="Login to\nFoursquare"
+			android:layout_height="wrap_content" android:id="@+id/buttonlogin"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:background="@color/lightblack" android:id="@+id/locationbar">
+		<Button android:text="Update Location" android:id="@+id/b_go"
+			android:textSize="10dp" android:layout_marginTop="5dp"
+			android:layout_width="wrap_content" android:layout_height="32dp"></Button>
+		<TextView android:layout_weight="1" android:id="@+id/et_longitude"
+			android:layout_height="wrap_content" android:hint="longitude"
+			android:layout_width="150dp" android:layout_marginTop="5dp"
+			android:gravity="center"></TextView>
+		<TextView android:layout_weight="1" android:id="@+id/et_latitude"
+			android:layout_height="wrap_content" android:hint="latitude"
+			android:layout_width="150dp" android:layout_marginTop="5dp"
+			android:gravity="center"></TextView>
+	</LinearLayout>
+	<FrameLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/frameLayout1" android:layout_weight="0"></FrameLayout>
+	<ListView android:id="@+id/lv_places" android:layout_width="fill_parent"
+		android:layout_marginTop="5dp" android:layout_height="0px"
+		android:layout_weight="1" android:background="#00000000" android:cacheColorHint="#00000000" android:fadingEdge="none"></ListView>
+	<WebView android:id="@+id/webview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+	<FrameLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:gravity="center_horizontal" android:id="@+id/moistureframe" android:layout_height="wrap_content" android:foregroundGravity="bottom" android:foreground="@color/lightred">
+		<LinearLayout android:orientation="vertical" android:id="@+id/moistureContainer" android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_width="match_parent">
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout3" android:background="@color/lightblack" android:layout_height="wrap_content" android:gravity="bottom">
+				<TextView android:textColor="@color/DemoKitTextWhite" style="@style/DemoKitControlLabel"  android:layout_width="0px" android:layout_weight="1" android:id="@+id/tempLabel" android:text="Physical Check-In Quality" android:gravity="bottom"></TextView>
+				<TextView android:layout_width="wrap_content" style="@style/DemoKitMeasurement"  android:layout_gravity="center_horizontal|right" android:id="@+id/moistValue" android:text="38.7%" android:gravity="right"></TextView>
+			</LinearLayout>
+			<ProgressBar android:layout_width="match_parent" android:max="100" android:layout_height="80dip" android:progress="38" style="?android:attr/progressBarStyleHorizontal" android:id="@+id/progressBar1"></ProgressBar>
+		</LinearLayout>
+<!-- 		<ImageView android:id="@+id/blocker" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/itemclicked" android:scaleType="center"></ImageView> -->
+	</FrameLayout>
+</LinearLayout>
