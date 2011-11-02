@@ -130,8 +130,8 @@ public class BaseActivity extends DemoKitActivity {
 
 	
 	private final DecimalFormat mcountDownFormatter = new DecimalFormat("##.##");
-	public static final String CLIENT_ID = "2BWPZSWH4ZU04CDTL5FH25HH1SXLNGUCRX4RHONMIAKHKWDV";
-	public static final String CLIENT_SECRET = "H4UDRESZ55XWKJJVFKCDTCZK1LEYQ0XWMEAGVTSOYSIMGRCP";
+	public static final String CLIENT_ID = "INSERT YOUR OWN ID";
+	public static final String CLIENT_SECRET = "INSERT YOUR OWN SECRET!";
 	public static String accessToken;
 	TextView tvLatitude;
 	TextView tvLongitude;
